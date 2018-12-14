@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.0.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.liaoin.frame</groupId>
+    <artifactId>jpa-mybatis-parent</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+
+    <name>jpa-mybatis-parent</name>
+    <description>jpa-mybatis-parent-父工程</description>
+
+    <modules>
+        <module>frame-commons</module>
+        <module>frame-dao-base</module>
+        <module>frame-dao-jpa</module>
+        <module>frame-dao-mybatis</module>
+        <module>frame-entity</module>
+        <module>frame-service-admin</module>
+        <module>frame-web-admin</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <mapper-spring-boot-starter.version>2.0.4</mapper-spring-boot-starter.version>
+        <swagger-spring-boot-starter.version>1.8.0.RELEASE</swagger-spring-boot-starter.version>
+        <swagger.version>1.5.21</swagger.version>
+        <mapper-core.version>1.0.5</mapper-core.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${mapper-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-core</artifactId>
+                <version>${mapper-core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.spring4all</groupId>
+                <artifactId>swagger-spring-boot-starter</artifactId>
+                <version>${swagger-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.liaoin.frame</groupId>
+                <artifactId>frame-entity</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.liaoin.frame</groupId>
+                <artifactId>frame-dao-base</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.liaoin.frame</groupId>
+                <artifactId>frame-dao-jpa</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.liaoin.frame</groupId>
+                <artifactId>frame-dao-mybatis</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.liaoin.frame</groupId>
+                <artifactId>frame-service-admin</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.liaoin.frame</groupId>
+                <artifactId>frame-web-admin</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.liaoin.frame</groupId>
+                <artifactId>frame-commons</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

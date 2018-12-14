@@ -1,0 +1,18 @@
+#HibernateÅäÖÃ¿ªÊ¼
+# Specify the DBMS
+spring:
+  jpa:
+    database: oracle
+    # Show or not log for each sql query
+    show-sql: true
+    # Hibernate ddl auto (create, create-drop, update)
+    hibernate:
+      ddl-auto: update
+      # Naming strategy
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    # stripped before adding them to the entity manager
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+#HibernateÅäÖÃ½áÊø
+

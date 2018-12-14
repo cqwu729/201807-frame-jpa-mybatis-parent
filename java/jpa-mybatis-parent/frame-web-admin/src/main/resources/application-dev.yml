@@ -1,0 +1,5 @@
+# swagger配置
+swagger:
+  enabled: true
+  title: 手机端端API
+  base-package: com.liaoin.frame

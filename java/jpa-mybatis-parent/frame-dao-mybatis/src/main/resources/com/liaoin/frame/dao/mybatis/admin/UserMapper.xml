@@ -1,0 +1,9 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liaoin.frame.dao.mybatis.admin.UserMapper">
+
+    <select id="queryByUsername" parameterType="java.lang.String" resultType="com.liaoin.frame.entity.admin.User">
+        select id,username,password,random,add_time from t_user where username = #{username}
+    </select>
+</mapper>

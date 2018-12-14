@@ -1,0 +1,4 @@
+# 开启日志记录
+logging:
+  level:
+    com.liaoin.frame.dao.mybatis: debug
